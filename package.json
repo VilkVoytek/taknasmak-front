@@ -1,7 +1,7 @@
 {
     "name": "taknasmak-front",
-    "version": "4.0.0",
-    "description": "Magento PWA Studio wrapper",
+    "version": "1.0.0",
+    "description": "Magento PWA Studio wrapper for TakNaSmak",
     "author": "Wojtek Brozyna",
     "homepage": "https://www.taknasmak.pl",
     "private": true,

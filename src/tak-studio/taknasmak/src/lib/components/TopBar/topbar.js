@@ -16,7 +16,7 @@ class TopBar extends Component {
 
         return (
             <div className={classes.root}>
-                A custom react component on top of venia-ui
+                TakNaSMAK
             </div>
         );
     }
