@@ -1,0 +1,10 @@
+{
+    "version": "independent",
+    "packages": [
+        "src/pwa-studio/packages/*",
+        "src/tak-studio/taknasmak"
+
+    ],
+    "npmClient": "yarn",
+    "useWorkspaces": true
+}
