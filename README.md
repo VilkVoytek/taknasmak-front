@@ -23,12 +23,12 @@ Note: only run commands from the root dir
 
 **step: 1**
 ```
-git clone https://github.com/Jordaneisenburger/fallback-studio.git
+git clone https://github.com/VilkVoytek/taknasmak-front.git
 ```
 
 **step: 2**
 ```
-cd fallback-studio
+cd taknasmak-front
 ```
 
 **step: 3** (this runs all necessary package.json commands back to back)
@@ -38,7 +38,7 @@ yarn run setup
 
 **step: 4**
 ```
-yarn run watch:example-shop
+yarn run watch:taknasmak
 ```
 
 ## Credits
