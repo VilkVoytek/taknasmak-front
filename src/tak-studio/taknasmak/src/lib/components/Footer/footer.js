@@ -23,7 +23,7 @@ const Footer = props => {
         <footer className={classes.root}>
             <div className={classes.tile}>
                 <h2 className={classes.tileTitle}>
-                    <span>Your Account</span>
+                    <span>Your Account TakNaSmak</span>
                 </h2>
                 <p className={classes.tileBody}>
                     <span>
