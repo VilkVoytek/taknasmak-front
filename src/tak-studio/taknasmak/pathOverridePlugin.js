@@ -1,9 +1,9 @@
 const path = require('path');
 const glob = require('glob');
 
-module.exports = class NormalModuleOverridePlugin {
+module.exports = class PathOverridePlugin {
     constructor(moduleOverrideMap) {
-        this.name = 'NormalModuleOverridePlugin';
+        this.name = 'PathOverridePlugin';
         this.moduleOverrideMap = moduleOverrideMap;
     }
 

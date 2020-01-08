@@ -4,15 +4,15 @@ const {
 } = require('@magento/pwa-buildpack');
 const { DefinePlugin } = require('webpack');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
-const NormalModuleOverridePlugin = require('./normalModuleOverrideWebpackPlugin');
-const componentOverrideMapping = require('./componentOverrideMapping');
+
+const pathOverridePlugin = require('./pathOverridePlugin');
+const overrideMapping = require('./overrideMapping');
 
 const path = require('path');
 
-const veniaUi = path.resolve(__dirname + '/../../pwa-studio/packages/venia-ui');
-const veniaConcept = path.resolve(
-    __dirname + '/../../pwa-studio/packages/venia-concept'
-);
+const veniaUi = path.resolve(`${__dirname}/../../pwa-studio/packages/venia-ui`);
+const veniaConcept = path.resolve(`${__dirname}/../../pwa-studio/packages/venia-concept/src`);
+const peregrineLib = path.resolve(`${__dirname}/../../pwa-studio/packages/peregrine/lib`);
 
 module.exports = async env => {
     const mediaUrl = await getMediaURL();
@@ -75,7 +75,7 @@ module.exports = async env => {
              * the globals object in jest.config.js.
              */
             UNION_AND_INTERFACE_TYPES: JSON.stringify(unionAndInterfaceTypes),
-            STORE_NAME: JSON.stringify('Example Shop')
+            STORE_NAME: JSON.stringify('TakNaSmak')
         }),
         new HTMLWebpackPlugin({
             filename: 'index.html',
@@ -133,13 +133,15 @@ module.exports = async env => {
 
     clientConfig.resolve.alias = Object.assign(clientConfig.resolve.alias, {
         '~veniaUi': veniaUi,
-        '~veniaConcept': `${veniaConcept}/src`
+        '~veniaConcept': `${veniaConcept}/src/`,
+        '~peregrineLib': `${peregrineLib}`
+        
     });
 
     clientConfig.resolve.modules.push(veniaUi, veniaConcept);
 
     clientConfig.plugins.push(
-        new NormalModuleOverridePlugin(componentOverrideMapping)
+        new pathOverridePlugin(overrideMapping)
     );
 
     return [clientConfig, serviceWorkerConfig];

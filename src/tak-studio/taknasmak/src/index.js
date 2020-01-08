@@ -5,10 +5,10 @@ import { setContext } from 'apollo-link-context';
 import { RetryLink } from 'apollo-link-retry';
 import { Util } from '@magento/peregrine';
 import { Adapter } from '@magento/venia-drivers';
-import store from '~veniaConcept/store';
+import store from '@magento/venia-concept/src/store';
 import app from '@magento/peregrine/lib/store/actions/app';
 import App, { AppContextProvider } from '@magento/venia-ui/lib/components/App';
-import '~veniaConcept/index.css';
+import '@magento/venia-concept/src/index.css';
 
 const { BrowserPersistence } = Util;
 const apiBase = new URL('/graphql', location.origin).toString();
