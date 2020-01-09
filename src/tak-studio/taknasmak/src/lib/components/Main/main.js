@@ -5,7 +5,6 @@ import { useScrollLock } from '@magento/peregrine';
 import { mergeClasses } from '~veniaUi/lib/classify';
 import Footer from '@magento/venia-ui/lib/components/Footer';
 import Header from '@magento/venia-ui/lib/components/Header';
-import TopBar from '../TopBar';
 import defaultClasses from '~veniaUi/lib/components/Main/main.css';
 
 const Main = props => {
@@ -19,9 +18,9 @@ const Main = props => {
 
     return (
         <main className={rootClass}>
-            <TopBar />
             <Header />
             <div className={pageClass}>{children}</div>
+            <div>Panel Boczny</div>
             <Footer />
         </main>
     );
