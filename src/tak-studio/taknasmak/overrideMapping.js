@@ -7,6 +7,6 @@ const peregrineLib = path.resolve(process.cwd() + '/../../pwa-studio/packages/pe
 module.exports = componentOverride = {
     [`${veniaUiLib}/components/Main`]: 'src/lib/components/Main',
     [`${veniaUiLib}/components/Footer`]: 'src/lib/components/Footer',
-    //[`${veniaUiLib}/components/Header`]: 'src/lib/components/Header',
+    [`${veniaUiLib}/components/Header`]: 'src/lib/components/Header',
     [`${veniaUiLib}/RootComponents/CMS`]: 'src/lib/RootComponents/CMS',
 };
