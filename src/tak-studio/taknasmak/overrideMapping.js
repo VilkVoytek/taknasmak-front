@@ -5,8 +5,8 @@ const veniaConcept = path.resolve(`${process.cwd()}/../../pwa-studio/packages/ve
 const peregrineLib = path.resolve(process.cwd() + '/../../pwa-studio/packages/peregrine/lib');
 
 module.exports = componentOverride = {
-    [`${veniaUiLib}/components/Header`]: 'src/lib/components/Header',
     [`${veniaUiLib}/components/Main`]: 'src/lib/components/Main',
     [`${veniaUiLib}/components/Footer`]: 'src/lib/components/Footer',
-    [`${veniaUiLib}/RootComponents/CMS`]: 'src/lib/RootComponents/CMS'
+    //[`${veniaUiLib}/components/Header`]: 'src/lib/components/Header',
+    [`${veniaUiLib}/RootComponents/CMS`]: 'src/lib/RootComponents/CMS',
 };

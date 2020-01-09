@@ -26,11 +26,11 @@
         "validate-queries": "yarn run download-schema && graphql validate-magento-pwa-queries --project exampleshop",
         "watch": "webpack-dev-server --progress --color --env.mode development"
     },
-    "repository": "github:jordaneisenburger/fallback-studio",
-    "author": "Jordan Eisenburger",
+    "repository": "https://github.com/VilkVoytek/taknasmak-front.git",
+    "author": "Wojtek Brozyna",
     "license": "(OSL-3.0 OR AFL-3.0)",
     "bugs": {
-        "url": "https://github.com/jordaneisenburger/fallback-studio/issues"
+        "url": "https://github.com/VilkVoytek/taknasmak-front/issues"
     },
     "dependencies": {},
     "devDependencies": {

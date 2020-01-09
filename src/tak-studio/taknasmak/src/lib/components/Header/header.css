@@ -35,6 +35,7 @@
 .logo {
     grid-area: title;
     width: 3rem;
+    border: 1px solid red;
 }
 
 .primaryActions {

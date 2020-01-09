@@ -3,7 +3,7 @@ import { shape, string } from 'prop-types';
 import { useFooter } from '@magento/peregrine/lib/talons/Footer/useFooter';
 
 import { mergeClasses } from '~veniaUi/lib/classify';
-import defaultClasses from '~veniaUi/lib/components/Footer/footer.css';
+import defaultClasses from './footer.css';
 import GET_STORE_CONFIG_DATA from '../../queries/getStoreConfigData.graphql';
 
 const Footer = props => {

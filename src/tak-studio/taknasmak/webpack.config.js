@@ -13,6 +13,7 @@ const path = require('path');
 const veniaUi = path.resolve(`${__dirname}/../../pwa-studio/packages/venia-ui`);
 const veniaConcept = path.resolve(`${__dirname}/../../pwa-studio/packages/venia-concept/src`);
 const peregrineLib = path.resolve(`${__dirname}/../../pwa-studio/packages/peregrine/lib`);
+const taknasmakScr = path.resolve(`${__dirname}/../../tak-studio/taknasmak/src`);
 
 module.exports = async env => {
     const mediaUrl = await getMediaURL();
@@ -134,7 +135,8 @@ module.exports = async env => {
     clientConfig.resolve.alias = Object.assign(clientConfig.resolve.alias, {
         '~veniaUi': veniaUi,
         '~veniaConcept': `${veniaConcept}/src/`,
-        '~peregrineLib': `${peregrineLib}`
+        '~peregrineLib': `${peregrineLib}`,
+        '~taknasmakSrc': `${taknasmakScr}`
         
     });
 

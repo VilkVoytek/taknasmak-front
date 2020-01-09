@@ -11,7 +11,7 @@ import OnlineIndicator from '~veniaUi/lib/components/Header/onlineIndicator';
 import { useHeader } from '@magento/peregrine/lib/talons/Header/useHeader';
 
 import { mergeClasses } from '~veniaUi/lib/classify';
-import defaultClasses from '~veniaUi/lib/components/Header/header.css';
+import defaultClasses from './header.css';
 
 const SearchBar = React.lazy(() => import('~veniaUi/lib/components/SearchBar'));
 
