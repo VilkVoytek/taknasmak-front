@@ -8,7 +8,7 @@ import { Adapter } from '@magento/venia-drivers';
 import store from '@magento/venia-concept/src/store';
 import app from '@magento/peregrine/lib/store/actions/app';
 import App, { AppContextProvider } from '@magento/venia-ui/lib/components/App';
-import '@magento/venia-concept/src/index.css';
+import './index.css';
 
 const { BrowserPersistence } = Util;
 const apiBase = new URL('/graphql', location.origin).toString();
