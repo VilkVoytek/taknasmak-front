@@ -12,8 +12,9 @@ import { useHeader } from '@magento/peregrine/lib/talons/Header/useHeader';
 
 import { mergeClasses } from '~veniaUi/lib/classify';
 
-//import defaultClasses from './header.css';
-import defaultClasses from '~veniaUi/lib/components/Header/header.css';
+import defaultClasses from './header.css'; //todo: resolve problem with link
+//import defaultClasses from './topbar.scss';
+//import defaultClasses from '~veniaUi/lib/components/Header/header.css';
 
 const SearchBar = React.lazy(() => import('~veniaUi/lib/components/SearchBar'));
 
