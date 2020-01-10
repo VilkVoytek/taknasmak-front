@@ -56,12 +56,12 @@ const Header = props => {
                     <div className={classes.nav}>
                         <NavTrigger />
                     </div>
-                    
+                </div>
+                <div className={classes.logoAction}>
                     <Link to={resourceUrl('/')}>
                         <Logo classes={{ logo: classes.logo }} />
                     </Link>
                 </div>
-                
                 
                 <div className={classes.centerActions}>
                     <ul className={classes.mainNav}>
@@ -96,6 +96,8 @@ Header.propTypes = {
         logo: string,
         open: string,
         primaryActions: string,
+        logoActions: string,
+        centerActions:string,
         secondaryActions: string,
         toolbar: string
     })
