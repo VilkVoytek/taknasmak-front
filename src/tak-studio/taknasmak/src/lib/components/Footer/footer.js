@@ -24,10 +24,10 @@ const Footer = props => {
             <div className={classes.tile}>
                 <h2 className={classes.tileTitle}>
                     <span>Your Account TakNaSmak</span>
-                    <h1>GET FOOD FAST — NOT FAST FOOD</h1>
-                    <h2>GET FOOD FAST — NOT FAST FOOD</h2>
-                    <h3>GET FOOD FAST — NOT FAST FOOD</h3>
                 </h2>
+                <h1>GET FOOD FAST — NOT FAST FOOD</h1>
+                <h2>GET FOOD FAST — NOT FAST FOOD</h2>
+                <h3>GET FOOD FAST — NOT FAST FOOD</h3>
                 <p className={classes.tileBody}>
                     <span>
                         this component is overwritten inside "example-shop" but

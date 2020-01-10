@@ -29,8 +29,9 @@
     grid-template-columns: 2fr 9fr 2fr;
     grid-template-rows: 1rem;
     justify-items: center;
-    min-height: 2.5rem;
+    min-height: 3rem;
     padding: 0 0;
+    line-height: 100%;
 }
 
 .logoAction {

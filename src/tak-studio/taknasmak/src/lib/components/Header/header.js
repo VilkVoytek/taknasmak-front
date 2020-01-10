@@ -6,15 +6,13 @@ import { Link, resourceUrl, Route } from '@magento/venia-drivers';
 
 import CartTrigger from '~veniaUi/lib/components/Header/cartTrigger';
 import NavTrigger from '~veniaUi/lib/components/Header/navTrigger';
-import SearchTrigger from '~veniaUi/lib/components/Header/searchTrigger';
+import SearchTrigger from './searchTrigger';
 import OnlineIndicator from '~veniaUi/lib/components/Header/onlineIndicator';
 import { useHeader } from '@magento/peregrine/lib/talons/Header/useHeader';
 
 import { mergeClasses } from '~veniaUi/lib/classify';
 
-import defaultClasses from './header.css'; //todo: resolve problem with link
-//import defaultClasses from './topbar.scss';
-//import defaultClasses from '~veniaUi/lib/components/Header/header.css';
+import defaultClasses from './header.css';
 
 const SearchBar = React.lazy(() => import('~veniaUi/lib/components/SearchBar'));
 
@@ -96,8 +94,8 @@ Header.propTypes = {
         logo: string,
         open: string,
         primaryActions: string,
-        logoActions: string,
-        centerActions:string,
+        logoAction: string,
+        centerActions: string,
         secondaryActions: string,
         toolbar: string
     })
