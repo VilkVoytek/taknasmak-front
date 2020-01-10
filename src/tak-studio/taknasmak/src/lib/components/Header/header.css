@@ -70,6 +70,8 @@
     display: inline-block;
     text-align: right;
     min-width: 122px;
+    padding-right: 5px;
+    grid-template-columns: 1fr;
 }
 
 /* Main navi */

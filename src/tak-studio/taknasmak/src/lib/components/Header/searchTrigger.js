@@ -20,7 +20,6 @@ const SearchTrigger = props => {
             className={classes.root} 
             color="inherit" 
             onClick={handleClick}
-            sizeSmall
         >
             <SearchIcon  />
         </IconButton>

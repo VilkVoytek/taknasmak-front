@@ -4,7 +4,7 @@ import { shape, string } from 'prop-types';
 import Logo from '~veniaUi/lib/components/Logo';
 import { Link, resourceUrl, Route } from '@magento/venia-drivers';
 
-import CartTrigger from '~veniaUi/lib/components/Header/cartTrigger';
+import CartTrigger from './cartTrigger';
 import NavTrigger from '~veniaUi/lib/components/Header/navTrigger';
 import SearchTrigger from './searchTrigger';
 import OnlineIndicator from '~veniaUi/lib/components/Header/onlineIndicator';
