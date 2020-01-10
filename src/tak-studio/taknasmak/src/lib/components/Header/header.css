@@ -1,18 +1,3 @@
-/*
-.root {
-    background-color: rgb(var(--venia-grey));
-    box-shadow: 0 1px rgb(var(--venia-border));
-    display: grid;
-    grid-auto-columns: 100%;
-    grid-auto-flow: row;
-    grid-auto-rows: auto;
-    grid-row-gap: 0.5rem;
-    position: -webkit-sticky;
-    position: sticky;
-    top: 0;
-    z-index: 10;
-}
-*/
 
 .root {
     background-color: rgba(255, 255, 255, 0.98);
@@ -40,32 +25,90 @@
     align-content: center;
     align-items: center;
     display: grid;
-    grid-template-areas: 'primary title secondary';
-    grid-template-columns: 1fr auto 1fr;
-    grid-template-rows: 3rem;
+    grid-template-areas: 'left center right';
+    grid-template-columns: 2fr 9fr 1fr;
+    grid-template-rows: 1rem;
+    
     justify-items: center;
     min-height: 2.5rem;
-    padding: 0 1rem;
+    padding: 0 0;
 }
 
 .logo {
-    grid-area: title;
+    grid-area: menu;
     width: 3rem;
-    border: 1px solid red;
+    float:left;
+}
+
+.nav {
+    visibility: hidden;
+    display: none;
 }
 
 .primaryActions {
-    grid-area: primary;
+    display: inline-block;
+    grid-area: left;
     justify-self: start;
+    width: 100%;
+    
+    grid-template-columns: 1fr;
+    
+    border:1px solid red;
+}
+
+.centerActions {
+    grid-area: center;
+    width: 100%;
+    display: grid;
 }
 
 .secondaryActions {
-    grid-area: secondary;
+    grid-area: right;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: end;
+    border:1px solid red;
 }
+
+/* Main navi */
+.mainNav {
+    float: right;
+    list-style: none;
+    width: 100%;
+    padding-right: 10%;
+    
+    border:1px solid red;
+}
+
+.mainNav li {
+    float: right;
+    display: inline-block;
+    margin-left: 40px;
+}
+
+.mainNav li a:link,
+.mainNav li a:visited {
+    padding: 8px 0;
+    color: #555;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.2s;
+    transition: border-bottom 0.2s;
+}
+
+.mainNav li a:hover,
+.mainNav li a:active {
+    border-bottom: 2px solid #e67e22;
+}
+
+
+
+
+
+
 
 .searchFallback {
     display: flex;
@@ -127,5 +170,24 @@
     }
     40% {
         box-shadow: 0 var(--dot-size) 0 0;
+    }
+}
+
+/* Small phones to small tablets: from 481px to 767px */
+@media only screen and (max-width: 767px) {
+    .nav {
+        visibility: visible;
+        display: inline-block;
+    }
+
+    .primaryActions {
+        grid-area: center;
+        width: 100%;
+        display: grid;
+    }
+    
+    .mainNav {
+        visibility: hidden;
+        display: none;
     }
 }

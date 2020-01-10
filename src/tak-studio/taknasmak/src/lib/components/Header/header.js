@@ -53,15 +53,26 @@ const Header = props => {
         <header className={rootClass}>
             <div className={classes.toolbar}>
                 <div className={classes.primaryActions}>
-                    <NavTrigger />
+                    <div className={classes.nav}>
+                        <NavTrigger />
+                    </div>
+                    
+                    <Link to={resourceUrl('/')}>
+                        <Logo classes={{ logo: classes.logo }} />
+                    </Link>
                 </div>
-                <OnlineIndicator
-                    hasBeenOffline={hasBeenOffline}
-                    isOnline={isOnline}
-                />
-                <Link to={resourceUrl('/')}>
-                    <Logo classes={{ logo: classes.logo }} />
-                </Link>
+                
+                
+                <div className={classes.centerActions}>
+                    <ul className={classes.mainNav}>
+                        <li><a href="/">Food delivery</a></li>
+                        <li><a href="/">How it works</a></li>
+                        <li><a href="/">Our cities</a></li>
+                        <li><a href="/">Sing In</a></li>
+                    </ul>
+                </div>
+                
+
                 <div className={classes.secondaryActions}>
                     <SearchTrigger
                         active={searchOpen}
@@ -69,6 +80,10 @@ const Header = props => {
                     />
                     <CartTrigger />
                 </div>
+                <OnlineIndicator
+                    hasBeenOffline={hasBeenOffline}
+                    isOnline={isOnline}
+                />
             </div>
             {searchBar}
         </header>
