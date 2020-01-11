@@ -11,7 +11,7 @@ import OnlineIndicator from '~veniaUi/lib/components/Header/onlineIndicator';
 import { useHeader } from '@magento/peregrine/lib/talons/Header/useHeader';
 
 import { mergeClasses } from '~veniaUi/lib/classify';
-import TopMenu from '../TopMenu/topmenu';
+import MegaMenu from '../MegaMenu/megamenu';
 import defaultClasses from './header.css';
 
 const SearchBar = React.lazy(() => import('~veniaUi/lib/components/SearchBar'));
@@ -61,7 +61,7 @@ const Header = props => {
                     </Link>
                 </div>
                 <div className={classes.centerActions}>
-                    <TopMenu />
+                    <MegaMenu />
                 </div>
                 <div className={classes.secondaryActions}>
                     <SearchTrigger
