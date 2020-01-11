@@ -21,51 +21,30 @@ const Footer = props => {
 
     return (
         <footer className={classes.root}>
-            <div className={classes.tile}>
-                <h2 className={classes.tileTitle}>
-                    <span>Your Account TakNaSmak</span>
-                </h2>
-                <h1>GET FOOD FAST — NOT FAST FOOD</h1>
-                <h2>GET FOOD FAST — NOT FAST FOOD</h2>
-                <h3>GET FOOD FAST — NOT FAST FOOD</h3>
-                <p className={classes.tileBody}>
-                    <span>
-                        this component is overwritten inside "example-shop" but
-                        the styling is still resolved from "venia-concept"
-                        because we don't need to change styling
-                    </span>
+            <div className="row">
+                <div className="col span-1-of-2">
+                    <ul className="footer-nav">
+                        <li><a href="#">About us</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">iOS App</a></li>
+                        <li><a href="#">Android App</a></li>
+                    </ul>
+                </div>
+                <div className="col span-1-of-2">
+                    <ul className="social-links">
+                        <li><a href="#"><i className="ion-social-facebook"></i></a></li>
+                        <li><a href="#"><i className="ion-social-twitter"></i></a></li>
+                        <li><a href="#"><i className="ion-social-googleplus"></i></a></li>
+                        <li><a href="#"><i className="ion-social-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div className="row">
+                <p>
+                    {copyright}
                 </p>
             </div>
-            <div className={classes.tile}>
-                <h2 className={classes.tileTitle}>
-                    <span>inquiries@example.com</span>
-                </h2>
-                <p className={classes.tileBody}>
-                    <span>
-                        Need to email us? Use the address above and we&rsquo;ll
-                        respond as soon as possible.
-                    </span>
-                </p>
-            </div>
-            <div className={classes.tile}>
-                <h2 className={classes.tileTitle}>
-                    <span>Live Chat</span>
-                </h2>
-                <p className={classes.tileBody}>
-                    <span>Mon – Fri: 5 a.m. – 10 p.m. PST</span>
-                    <br />
-                    <span>Sat – Sun: 6 a.m. – 9 p.m. PST</span>
-                </p>
-            </div>
-            <div className={classes.tile}>
-                <h2 className={classes.tileTitle}>
-                    <span>Help Center</span>
-                </h2>
-                <p className={classes.tileBody}>
-                    <span>Get answers from our community online.</span>
-                </p>
-            </div>
-            <small className={classes.copyright}>{copyright}</small>
         </footer>
     );
 };

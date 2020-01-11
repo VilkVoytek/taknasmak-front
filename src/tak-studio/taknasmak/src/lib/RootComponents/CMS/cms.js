@@ -4,6 +4,8 @@ import cmsPageQuery from '~veniaUi/lib/queries/getCmsPage.graphql';
 import { fullPageLoadingIndicator } from '~veniaUi/lib/components/LoadingIndicator';
 import RichContent from '~veniaUi/lib/components/RichContent';
 import { number } from 'prop-types';
+import Banner from './banner'
+
 import CategoryList from '~veniaUi/lib/components/CategoryList';
 
 const CMSPage = props => {
@@ -38,7 +40,7 @@ const CMSPage = props => {
 
         return (
             <div>
-                <h2>GET FOOD FAST — NOT FAST FOOD</h2>
+                <Banner />
             </div>
         );
     }
