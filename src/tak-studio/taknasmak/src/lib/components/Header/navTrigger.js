@@ -22,7 +22,7 @@ const NavigationTrigger = props => {
             aria-label="menu"
             onClick={handleOpenNavigation}
         >
-            <MenuIcon />
+            <MenuIcon fontSize="small" />
         </IconButton>
     )
 };

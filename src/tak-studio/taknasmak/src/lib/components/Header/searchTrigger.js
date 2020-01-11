@@ -21,7 +21,7 @@ const SearchTrigger = props => {
             color="inherit" 
             onClick={handleClick}
         >
-            <SearchIcon  />
+            <SearchIcon  fontSize="small" />
         </IconButton>
     );
 };

@@ -25,7 +25,7 @@ const CartTrigger = props => {
             onClick={handleClick}
         >
             <Badge badgeContent={itemCounter} color="secondary">
-                <ShoppingCartOutlinedIcon />
+                <ShoppingCartOutlinedIcon fontSize="small"/>
             </Badge>
         </IconButton>
     );
