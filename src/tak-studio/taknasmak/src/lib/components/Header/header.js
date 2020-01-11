@@ -5,7 +5,7 @@ import Logo from '~veniaUi/lib/components/Logo';
 import { Link, resourceUrl, Route } from '@magento/venia-drivers';
 
 import CartTrigger from './cartTrigger';
-import NavTrigger from '~veniaUi/lib/components/Header/navTrigger';
+import NavTrigger from './navTrigger';
 import SearchTrigger from './searchTrigger';
 import OnlineIndicator from '~veniaUi/lib/components/Header/onlineIndicator';
 import { useHeader } from '@magento/peregrine/lib/talons/Header/useHeader';
